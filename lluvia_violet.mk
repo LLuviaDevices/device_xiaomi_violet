@@ -14,12 +14,12 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 $(call inherit-product, device/xiaomi/violet/device.mk)
 
 # Inherit some common AospExtended stuff.
-TARGET_BOOT_ANIMATION_RES := 2280
+TARGET_BOOT_ANIMATION_RES := 1080
 
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/lluvia/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_violet
+PRODUCT_NAME := lluvia_violet
 PRODUCT_DEVICE := violet
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7 Pro
@@ -35,10 +35,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
 
 # Set this flag in build script
-ifeq ($(CURRENT_BUILD_TYPE), gapps)
+#ifeq ($(CURRENT_BUILD_TYPE), gapps)
 # Use Gapps
 TARGET_SHIPS_SEPERATE_GAPPS_BUILD := true
 WITH_GAPPS := true
 TARGET_GAPPS_ARCH := arm64
 IS_PHONE := true
-endif
+#endif
