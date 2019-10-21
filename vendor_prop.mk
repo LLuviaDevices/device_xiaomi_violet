@@ -161,6 +161,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.egl.hw=0 \
     ro.com.google.ime.theme_id=5 \
     debug.mdpcomp.logs=0 \
+    debug.sf.latch_unsignaled=1 \
     ro.vendor.display.sensortype=2 \
     vendor.gralloc.disable_ubwc=0 \
     vendor.display.disable_scaler=0 \
@@ -171,4 +172,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     vendor.display.comp_mask=0 \
     vendor.display.disable_hw_recovery_dump=1 \
     vendor.display.enable_default_color_mode=0 \
+    vendor.display.enable_optimize_refresh=1 \
+    vendor.display.disable_ui_3d_tonemap=1 \
     vendor.display.dataspace_saturation_matrix=1.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0
+
