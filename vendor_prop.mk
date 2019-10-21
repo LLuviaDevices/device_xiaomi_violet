@@ -77,6 +77,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Netflix
 PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=320
     ro.netflix.bsp_rev=Q6150-17263-1
 
 # OEM Unlock
@@ -149,6 +150,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     debug.sf.hw=0 \
     debug.egl.hw=0 \
     debug.sf.latch_unsignaled=1 \
+    ro.com.google.ime.theme_id=5 \
     ro.vendor.display.cabl=0 \
     ro.vendor.display.svi=1 \
     ro.vendor.display.sensortype=2 \
